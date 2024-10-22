@@ -3,4 +3,4 @@ debts=3000
 
 net_worth=assets-debts
 
-print("Your net worth is " + "{:,}".format(net_worth, ".2f"))
+print("Your net worth is " + "{:,}".format(net_worth))
