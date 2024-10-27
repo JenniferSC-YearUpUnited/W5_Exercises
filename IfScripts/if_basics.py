@@ -31,7 +31,7 @@ else:
     print("x is NOT greater than y")   
 
 # final statement to say the final values of x and y
-print("The final value of x is 20 and the final value of y is 20")
+print(f" The final value of x is {x} and the final value of y is {y}")
 
     
    
