@@ -19,26 +19,23 @@
 
 import time
 
-current_hr = time.strftime("%H:%M""%p")
+current_hr = time.strftime("%H:%M""%p") #display military hour minutes and pm or am
 print(current_hr)
 
-current_hr1 = int(time.strftime("%H"))
+current_hr1 = int(time.strftime("%H")) #casting the display of time to a string as it is not letting me print without converting it first
 
-morning_greeting = "Good morning!"
-day_greeting = "Good day!"
-evening_greeting = "Good evening!" 
-latenight_greeting = "What are you doing up so late??"
 
 if 5 >= current_hr1 <=9:
-    print(morning_greeting)
-elif current_hr1 <= 16:
-   print(day_greeting)
-elif current_hr1 <= 10:
-  print(evening_greeting)    
-elif 22 >= current_hr1 <= 4:
-    print(latenight_greeting)
-else:
-   print("Get some rest!")    
+    print("Good morning!") # current hours being midnight 00 -9am then between 5 and 9am
+elif 10 >= current_hr1 <= 16:
+   print("Good day!") # current hour being 10am through 4pm(1600)
+elif 17 >= current_hr1 <= 22:
+  print("Good evening!")  #current hours being 5pm(1700 )through midnight (000) then current hours being 5pm( 1700)through 11pm (2200)
+elif 23 >= current_hr1 <= 4:
+    print("What are you doing up so late??") # updating/ adding for current hours being 11pm(2300) thorugh 4am
+
+
+  
 
 #try it again tonight to see if it prints the right message for evening and late night
 
