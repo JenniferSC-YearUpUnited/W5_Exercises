@@ -20,7 +20,3 @@ else:
 
 
 
-
-
-# display the results
-
