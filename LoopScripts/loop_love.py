@@ -1,0 +1,1 @@
+great = ["masterful, gifted, talented, excellent, outstanding"]
