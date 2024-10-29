@@ -21,9 +21,9 @@ import time
 
 current_hr = time.strftime("%H:%M""%p") #display military hour minutes and pm or am
 print(current_hr)
-
+#print(type(current_hr))
 current_hr1 = int(time.strftime("%H")) #casting the display of time to a string as it is not letting me print without converting it first
-
+#print(type(current_hr1))
 
 if current_hr1 >= 5 and current_hr1 <= 9:
     print("Good morning!") # current hours being midnight 00 -9am then between 5 and 9am
